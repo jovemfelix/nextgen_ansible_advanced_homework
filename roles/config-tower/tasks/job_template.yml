@@ -1,7 +1,7 @@
 
 - name: Job project for OSP Instances
   command: |
-    tower-cli project create --name "{{ proj_name }}" --organization "{{org_name}}" --scm-type "git" --scm-url "https://github.com/jovemfelix/solution_ansible_flask_app_loader_all_in_one"
+    tower-cli project create --name "{{ proj_name }}" --organization "{{org_name}}" --scm-type "git" --scm-url "{{ proj_scm_url }}"
 
 - name: Job template for OSP Instances
   command: |

@@ -46,3 +46,5 @@ tower_username: admin
 tower_password: 6hJ1H4fmlNYJ
 tower_credential_ssh_key_data: "/root/.ssh/openstack.pem"
 tower_credential_username: cloud-user
+
+proj_scm_url: "https://github.com/jovemfelix/nextgen_ansible_advanced_homework"
