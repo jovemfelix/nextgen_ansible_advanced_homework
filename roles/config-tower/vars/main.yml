@@ -15,7 +15,7 @@ workflow_template_name: cicd_workflow
 job_template_name_osp_instances: "02_Provision QA Env"
 osp_instances_playbook: site-osp-instances.yml
 group_name: workstation
-host_name: workstation-{{osp_GUID}}.{{osp_DOMAIN}}
+host_name: workstation-{{ osp_guid }}.{{ osp_domain }}
 job_template_name_3tier_app: "04_3tier app deployment on QA Env"
 app_deploy_playbook: site-3tier-app.yml
 vault_name: yum_repo_vault
@@ -41,4 +41,8 @@ job_template_name_3tier_app_aws: "09_3 tier app on Prod"
 aws_cred_name: "Creds for AWS instances"
 job_template_smoke_aws: "10_Smoke test Prod env"
 aws_smoke_app_playbook: site-smoketest-aws.yml
-
+tower_host: tower1.{{tower_guid}}.example.opentlc.com
+tower_username: admin
+tower_password: 6hJ1H4fmlNYJ
+tower_credential_ssh_key_data: "/root/.ssh/openstack.pem"
+tower_credential_username: cloud-user

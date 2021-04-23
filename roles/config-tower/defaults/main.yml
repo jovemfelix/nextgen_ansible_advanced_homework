@@ -1,2 +1,12 @@
 ---
 # defaults file for roles/config-tower
+tower_guid: "{{ lookup('env','TOWER_GUID') }}"
+osp_guid: "{{ lookup('env','OSP_GUID') }}"
+osp_domain: "{{ lookup('env','OSP_DOMAIN') }}"
+opentlc_login: "{{ lookup('env','OPENTLC_ID') }}"
+path_to_opentlc_key: /root/.ssh/mykey.pem 
+param_repo_base: "{{ lookup('env','JQ_REPO_BASE') }}"
+opentlc_password: "{{ lookup('env','OPENTLC_PASSWORD') }}"
+REGION_NAME: "{{ lookup('env','REGION') }}"
+EMAIL: "{{ lookup('env','MAIL_ID') }}"
+github_repo: "{{ lookup('env','GITHUB_REPO') }}"
